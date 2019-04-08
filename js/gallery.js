@@ -60,6 +60,7 @@ mRequest.onreadystatechange = function() {
         try {
 // Try to parse json
             mJson = JSON.parse(mRequest.responseText);
+// catch error
             console.log(mJson);
         } catch(err) {
             console.log(err.message)
