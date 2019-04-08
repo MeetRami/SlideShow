@@ -1,0 +1,46 @@
+{
+    "images": [
+		{
+            "imgPath": "img/wonders/tajMahal.jpg",
+            "imgLocation": "India",
+            "description": "Beachline",
+            "date": "01/12/2016"
+        },
+        {
+            "imgPath": "img/wonders/greatWallOfChina.jpg",
+            "imgLocation": "China",
+            "description": "Hirosaki Castle",
+            "date": "01/08/2016"
+        },
+        {
+            "imgPath": "img/Wonders/petra.jpg",
+            "imgLocation": "Jordan",
+            "description": "Seoul",
+            "date": "01/09/2016"
+        },
+        {
+            "imgPath": "img/wonders/christTheRedeemer.jpg",
+            "imgLocation": "Brazil",
+            "description": "Countryside mountains",
+            "date": "01/10/2016"
+        },
+        {
+            "imgPath": "img/wonders/machuPicchu.jpg",
+            "imgLocation": "Peru",
+            "description": "Lake castle",
+            "date": "01/11/2016"
+        },
+        {
+            "imgPath": "img/wonders/chichenItza.jpg",
+            "imgLocation": "Mexico",
+            "description": "Beachline",
+            "date": "01/12/2016"
+        },
+		{
+            "imgPath": "img/wonders/colosseum.jpg",
+            "imgLocation": "Italy",
+            "description": "Beachline",
+            "date": "01/12/2016"
+        }
+  ]
+}
