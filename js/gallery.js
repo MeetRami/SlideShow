@@ -80,15 +80,17 @@ var mUrl = 'image.json';
 var mRequest = new XMLHttpRequest();
 //exception handler
 mRequest.onreadystatechange = function() {
-    if (mRequest.readyState == 4 && mRequest.status == 200) {
-        try {
-// Try to parse json
-            mJson = JSON.parse(mRequest.responseText);
-// catch error
-            console.log(mJson);
-        } catch(err) {
-            console.log(err.message)
-        }
+    if (this.readyState == 4 && this.status == 200) {
+        mJson = JSON.parse(this.responseText);
+        mJson.images.forEach(function(element) {
+			mImages.push(new GalleryImage(
+							element.imgLocation,
+							element.description,
+							element.date,
+							element.imgPath));
+		}, this);
+
+		defShow();
     }
 };
 mRequest.open("GET",mURL, true);
