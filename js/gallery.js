@@ -51,7 +51,7 @@ function swapPhoto(func = true) {
 	}
 	
 
-	$('.photoHolder img').attr('src', mImages[mCurrentIndex].img);
+	$('.photoHolder img').attr('img', mImages[mCurrentIndex].img);
 	
 	$('p.location').text(
 	'Location: ' + mImages[mCurrentIndex].location    );
