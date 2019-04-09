@@ -56,7 +56,6 @@ body {
 #prevPhoto {
 	height: 42px;
 	width: 42px;
-	float: left;
 }
 #prevPhoto:hover{
 	opacity: .8;
