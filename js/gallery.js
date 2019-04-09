@@ -109,6 +109,19 @@ $(document).ready( function() {
 	
 	// This initially hides the photos' metadata information
 	$('.details').eq(0).hide();
+	//Function to make it show more detail by rotating arrow
+	$('.moreIndicator').click(function(){
+		$(this).toggleClass('rot90');
+		$('.details').eq(0).slideToggle('slow');
+	});
+	//next arrow goes to next slide using swapPhoto function
+	$('#nextPhoto').click(function(){
+		swapPhoto();
+	});
+
+	$('#prevPhoto').click(function(){
+		swapPhoto(false);
+	});
 	
 });
 
