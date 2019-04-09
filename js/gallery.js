@@ -145,6 +145,23 @@ window.addEventListener('load', function() {
 
 }, false);
 
+//Implimenting get method
+function getJSONFile(){	
+	var path = window.location.search.substring(1);
+	var file = query.split("&");
+	for (var i=0;i<file.length;i++) {
+			var name = file[i].split("=");
+			if(name[0] == 'json'){return name[1];}
+	}
+	return(false);
+}
+
+var jsonFile = getJSONFile();
+
+if(jsonFile != false){
+	mUrl = jsonFile;
+}
+
 function GalleryImage(location, description, date, img) {
 	//Following things implemented in this function:
 	//1. location where photo was taken
