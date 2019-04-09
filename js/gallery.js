@@ -94,7 +94,19 @@ mRequest.onreadystatechange = function() {
 mRequest.open("GET",mURL, true);
 mRequest.send();
 
-
+//Following function is default function for gallery
+function defShow(){
+	$('.photoHolder img').attr('src', mImages[mCurrentIndex].img);
+	$('p.location').text(
+		'Location: ' + mImages[mCurrentIndex].location
+		);
+	$('p.description').text(
+	'Description: ' + mImages[mCurrentIndex].description
+	);
+	$('p.date').text(
+	'Date: ' + mImages[mCurrentIndex].date
+	);
+}
 
 //You can optionally use the following function as your event callback for loading the source of Images from your json data (for HTMLImageObject).
 //@param A GalleryImage object. Use this method for an event handler for loading a gallery Image object (optional).
