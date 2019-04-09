@@ -98,7 +98,7 @@ mRequest.send();
 
 //Following function is default function for gallery
 function defShow(){
-	$('.photoHolder img').attr('src', mImages[mCurrentIndex].img);
+	$('.photoHolder img').attr('img', mImages[mCurrentIndex].img);
 	$('p.location').text(
 		'Location: ' + mImages[mCurrentIndex].location
 		);
@@ -172,5 +172,5 @@ function GalleryImage(location, description, date, img) {
 	this.location = location;
 	this.description = description;
 	this.date = date;
-	this.img = img
+	this.img = img;
 }
